@@ -5,3 +5,4 @@ Web application for futurizeme.tech
 - react
 - typescript
 - docker
+- travis-ci
