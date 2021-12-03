@@ -4,3 +4,4 @@ Web application for futurizeme.tech
 # stack
 - react
 - typescript
+- docker
