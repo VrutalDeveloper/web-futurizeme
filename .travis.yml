@@ -8,3 +8,15 @@ before_install:
 
 script:
   - docker run -e CI=true peaceofsheep/web-futurizeme.test npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "web-futurizeme"
+  env: "Webfuturizeme-env"
+  bucket_name: "elasticbeanstalk-us-east-1-756442812649"
+  bucket_path: "web-futurizeme"
+  on:
+    branch: main
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
