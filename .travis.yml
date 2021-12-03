@@ -3,6 +3,10 @@ sudo: required
 services:
   - docker
 
+branches:
+  only:
+    - main
+
 before_install:
   - docker build -f Dockerfile.dev -t peaceofsheep/web-futurizeme.test .
 
@@ -16,7 +20,5 @@ deploy:
   env: "Webfuturizeme-env"
   bucket_name: "elasticbeanstalk-us-east-1-756442812649"
   bucket_path: "web-futurizeme"
-  on:
-    branch: main
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
