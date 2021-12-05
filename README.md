@@ -9,4 +9,4 @@ Web application for futurizeme.tech, deployed in AWS [link]
 - docker
 - travis-ci
 
-[link]: <http://webfuturizeme-env.eba-2dmbrtjr.us-east-1.elasticbeanstalk.com>
+[link]: <https://www.futurizeme.tech>
