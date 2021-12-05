@@ -9,4 +9,4 @@ Web application for futurizeme.tech, deployed in AWS [link]
 - docker
 - travis-ci
 
-[link]: <https://www.futurizeme.tech>
+[link]: <https://futurizeme.tech>
