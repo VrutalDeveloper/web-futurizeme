@@ -1,0 +1,22 @@
+.eye {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 100;
+  position: fixed;
+  cursor: move;
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iris {
+  background: black;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: fixed;
+  flex: none;
+}
