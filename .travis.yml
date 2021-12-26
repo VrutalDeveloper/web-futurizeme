@@ -1,5 +1,4 @@
 language: generic
-sudo: required
 services:
   - docker
 
@@ -7,18 +6,12 @@ branches:
   only:
     - main
 
-before_install:
-  - docker build -f Dockerfile.dev -t peaceofsheep/web-futurizeme.test .
-
-script:
-  - docker run -e CI=true peaceofsheep/web-futurizeme.test npm run test
-
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "web-futurizeme"
   env: "Webfuturizeme-env"
-  bucket_name: "elasticbeanstalk-us-east-1-756442812649"
+  bucket: "elasticbeanstalk-us-east-1-756442812649"
   bucket_path: "web-futurizeme"
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
