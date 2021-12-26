@@ -1,0 +1,12 @@
+.social-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  color: white;
+  margin: 16px;
+}

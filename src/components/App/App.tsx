@@ -1,6 +1,7 @@
 import { FC, useEffect, useRef } from "react";
 import { fromEvent } from "rxjs";
 import { Eye } from "../Eye/Eye";
+import { SocialNetworks } from "../SocialNetworks/SocialNetworks";
 import "./App.style.css";
 
 export const App: FC = () => {
@@ -25,6 +26,8 @@ export const App: FC = () => {
       <div className="label" ref={mouseTextRef}></div>
       <Eye />
       <Eye />
+
+      <SocialNetworks />
     </div>
   );
 };
