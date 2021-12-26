@@ -7,6 +7,7 @@ export const SocialNetworks: FC = () => {
       <a
         href="https://github.com/VrutalDeveloper"
         target="_blank"
+        rel="noreferrer"
         className="social-item"
       >
         <svg
